@@ -15,11 +15,11 @@
     "storage"
   ],
   "host_permissions": [
-  "*://vk.com/*",
-  "*://*.vk.com/*",
-  "*://vk.ru/*",
-  "*://*.vk.ru/*"
-],
+    "*://vk.com/*",
+    "*://*.vk.com/*",
+    "*://vk.ru/*",
+    "*://*.vk.ru/*"
+  ],
   "background": {
     "service_worker": "src/background/service-worker.js"
   },
@@ -29,11 +29,11 @@
         "assets/ui/download-icon.svg"
       ],
       "matches": [
-  "*://vk.com/*",
-  "*://*.vk.com/*",
-  "*://vk.ru/*",
-  "*://*.vk.ru/*"
-],
+        "*://vk.com/*",
+        "*://*.vk.com/*",
+        "*://vk.ru/*",
+        "*://*.vk.ru/*"
+      ]
     }
   ],
   "action": {
@@ -50,7 +50,9 @@
     {
       "matches": [
         "*://vk.com/*",
-        "*://*.vk.com/*"
+        "*://*.vk.com/*",
+        "*://vk.ru/*",
+        "*://*.vk.ru/*"
       ],
       "js": [
         "src/content/content-script.js",
